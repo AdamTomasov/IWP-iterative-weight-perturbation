@@ -30,7 +30,7 @@ def count_score(data, ISET, avg):
     return np.array(l).reshape(len(avg), len(data))
 
 
-
+#vypocer pomeru
 def count_ratio(dataFrame):
     l = []
     for x in range(len(dataFrame)):
