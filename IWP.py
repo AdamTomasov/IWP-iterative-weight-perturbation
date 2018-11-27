@@ -1,9 +1,8 @@
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
 
-# set weights
+
 
 def set_LTU(x, y, z):
     w0 = x
@@ -137,4 +136,3 @@ def iwp(ISET, ATTS):
 
         count += 1
 
-iwp(ISET, ATTS)
