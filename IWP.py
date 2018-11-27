@@ -2,15 +2,13 @@ import pandas as pd
 import numpy as np
 
 
-
-
 def set_LTU(x, y, z):
     w0 = x
     w1 = y
     w2 = z
     return [w0, w1, w2]
 
-
+#koment
 def count_avg(data):
     data = np.array(data)
     l = []
@@ -30,6 +28,7 @@ def count_score(data, ISET, avg):
             l.append((float(data[j]) * float(ISET[j])) - float(avg[i]))
 
     return np.array(l).reshape(len(avg), len(data))
+
 
 
 def count_ratio(dataFrame):
@@ -53,7 +52,6 @@ ATTS = ['x1', 'x2']
 
 def iwp(ISET, ATTS):
     h= set_LTU(-0.5, 1,6)
-    best = h
 
     count = 0
     while count != 3:
@@ -80,7 +78,6 @@ def iwp(ISET, ATTS):
             score_table['Score'] = count_ratio(score_table)
             score_table['Avg'] = avg
 
-            # print("Table with Score\n")
 
             print(score_table)
 
@@ -111,7 +108,6 @@ def iwp(ISET, ATTS):
             score_table1['Score'] = count_ratio(score_table1)
             score_table1['Avg'] = -avg1
 
-            # print("Table with Score\n")
 
             print(score_table1)
 
