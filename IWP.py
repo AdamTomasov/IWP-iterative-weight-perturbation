@@ -8,7 +8,7 @@ def set_LTU(x, y, z):
     w2 = z
     return [w0, w1, w2]
 
-#koment
+
 def count_avg(data):
     data = np.array(data)
     l = []
@@ -30,7 +30,6 @@ def count_score(data, ISET, avg):
     return np.array(l).reshape(len(avg), len(data))
 
 
-#vypocer pomeru
 def count_ratio(dataFrame):
     l = []
     for x in range(len(dataFrame)):
